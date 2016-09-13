@@ -17,4 +17,9 @@ angular.module('beerWise')
             .state('beer-three', {
                 url: '/beer-three',
                 templateUrl: 'views/beer-three.html'
-            });
+            })
+            .state('beer-four', {
+                url: '/beer-four',
+                templateUrl: 'views/beer-four.html'
+            })
+          })

@@ -1,13 +1,87 @@
 window.onload = function () {
+    var $ = jQuery,
+        wheelPosition = 0;
 
-    var wheel = new wheelnav("wheelDiv");
+    $('#Top').click(function(){
+      if(wheelPosition === 0){
+        logoRotation(90);
+      }
+      else if(wheelPosition == 180){
+        logoRotation(-90);
+      }
+      else return;
+    });
 
-    //This is the place for code snippets from the documentation -> http://wheelnavjs.softwaretailoring.net/documentation.html
+    $('#Right').click(function(){
+      if(wheelPosition == 90){
+        logoRotation(-90);
+      }
+      else if(wheelPosition === 270){
+        logoRotation(90);
+      }
+      else return;
+    });
 
-    wheel.createWheel(["#bottle", "#bottle", "#bottle", "#bottle"]);
-    wheel.navigateWheel(4);
+    $('#Bottom').click(function(){
+      if(wheelPosition === 0){
+        logoRotation(-90);
+      }
+      else if(wheelPosition == 180){
+        logoRotation(90);
+      }
+      else return;
+    });
 
-    //Insert generated JavaScript code from here -> http://pmg.softwaretailoring.net
-    document.getElementById("bottle").attr.src = "images/stupid_bottle.png";
+    $('#Left').click(function(){
+      if(wheelPosition == 90){
+        logoRotation(90);
+      }
+      else if(wheelPosition == 270){
+        logoRotation(-90);
+      }
+      else return;
+    });
 
+    function logoRotation(direction){
+      if(wheelPosition === 0 && direction == 90){
+        $('.beer--logos').css('transform', 'rotate(-90deg)');
+        $('#Nav').css('transform', 'rotate(90deg)');
+        wheelPosition = 90;
+      }
+      else if(wheelPosition === 0 && direction == -90){
+        $('.beer--logos').css('transform', 'rotate(90deg)');
+        $('#Nav').css('transform', 'rotate(-90deg)');
+        wheelPosition = 270;
+      }
+      else if(wheelPosition === 90 && direction == 90){
+        $('.beer--logos').css('transform', 'rotate(-180deg)');
+        $('#Nav').css('transform', 'rotate(180deg)');
+        wheelPosition = 180;
+      }
+      else if(wheelPosition === 90 && direction == -90){
+        $('.beer--logos').css('transform', 'rotate(0deg)');
+        $('#Nav').css('transform', 'rotate(0deg)');
+        wheelPosition = 0;
+      }
+      else if(wheelPosition === 180 && direction == 90){
+        $('.beer--logos').css('transform', 'rotate(90deg)');
+        $('#Nav').css('transform', 'rotate(270deg)');
+        wheelPosition = 270;
+      }
+      else if(wheelPosition === 180 && direction == -90){
+        $('.beer--logos').css('transform', 'rotate(-90deg)');
+        $('#Nav').css('transform', 'rotate(90deg)');
+        wheelPosition = 90;
+      }
+      else if(wheelPosition === 270 && direction == 90){
+        $('.beer--logos').css('transform', 'rotate(0deg)');
+        $('#Nav').css('transform', 'rotate(360deg)');
+        wheelPosition = 0;
+      }
+      else if(wheelPosition === 270 && direction == -90){
+        $('.beer--logos').css('transform', 'rotate(180deg)');
+        $('#Nav').css('transform', 'rotate(180deg)');
+        wheelPosition = 180;
+      }
+    }
 };

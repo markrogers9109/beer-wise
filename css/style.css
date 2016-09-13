@@ -27,6 +27,18 @@ li a img {
     position: relative;
 }
 
+.beer--logos {
+  transition: transform 2s;
+}
+
+#Nav {
+  transition: transform 2s;
+}
+
+#Nav > ul > li {
+  list-style: none;
+}
+
 @media (max-width: 600px) {
     #wheelDiv {
         height: 350px;

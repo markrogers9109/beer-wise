@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="beerWise">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
-    <script type="text/javascript" src="vendors/js/angular.js"></script>
-    <script type="text/javascript" src="vendors/js/angular-ui-router.js"></script>
-    <script src="app.js" charset="utf-8"></script>
-    <script src="js/app.routes.js" charset="utf-8"></script>
-    <script type="text/javascript" src="vendors/js/raphael.min.js"></script>
-    <script type="text/javascript" src="vendors/js/raphael.icons.min.js"></script>
-    <script type="text/javascript" src="vendors/js/wheelnav.min.js"></script>
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.css">
+        <script type="text/javascript" src="vendors/js/angular.js"></script>
+        <script type="text/javascript" src="vendors/js/angular-ui-router.js"></script>
+        <script src="app.js" charset="utf-8"></script>
+        <script src="js/app.routes.js" charset="utf-8"></script>
+    </head>
+    <body>
 
-    <div class="row">
-        <div class="col-xs-2 col-xs-push-1 bottle">
-            <img src="images/beer_1.png" alt="" />
+        <div class="row">
+            <nav class="col-xs-8 col-xs-pull-4" id="Nav">
+                <ul>
+                    <li class="col-xs-12">
+                        <a ui-sref="beer-one" id="Top"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a ui-sref="beer-two" id="Left"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a ui-sref="beer-three" id="Right"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a>
+                    </li>
+                    <li class="col-xs-12">
+                        <a ui-sref="beer-four" id="Bottom"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a>
+                    </li>
+                </ul>
+            </nav>
+            <ui-view></ui-view>
         </div>
-        <nav class="col-xs-8 col-xs-pull-6" id="Nav">
-            <ul>
-                <li class="col-xs-12"><a ui-sref="beer-one" id="Top"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a></li>
-                <li class="col-xs-6"><a ui-sref="beer-two" id="Left"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a></li>
-                <li class="col-xs-6"><a ui-sref="beer-three" id="Right"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a></li>
-                <li class="col-xs-12"><a ui-sref="beer-four" id="Bottom"><img class="beer--logos" src="images/ABA_Logo.png" alt="#"></a></li>
-            </ul>
-        </nav>
-    </div>
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
 </html>

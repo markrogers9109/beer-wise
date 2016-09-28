@@ -6,10 +6,14 @@ angular.module('beerWise')
         $stateProvider
 
             // HOME STATES AND NESTED VIEWS ========================================
+            .state('home', {
+              url:('/home'),
+              templateUrl: 'index.html'
+            })
             .state('beer-one', {
                 url: '/beer-one',
                 templateUrl: 'views/beer-one.html',
-                animation: 'beerAnimationOne'
+                controller: 'beerAnimationOne'
             })
             .state('beer-two', {
                 url: '/beer-two',
@@ -19,11 +23,11 @@ angular.module('beerWise')
             .state('beer-three', {
                 url: '/beer-three',
                 templateUrl: 'views/beer-three.html',
-                animation: 'beerAnimationThree'
+                controller: 'beerAnimationThree'
             })
             .state('beer-four', {
                 url: '/beer-four',
                 templateUrl: 'views/beer-four.html',
-                animation: 'beerAnimationFour'
+                controller: 'beerAnimationFour'
             })
           })

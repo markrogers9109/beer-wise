@@ -77,25 +77,61 @@ li a img {
     background: transparent;
 }
 
-#liquidBeerOne,
-#liquidBeerTwo,
-#liquidBeerThree,
-#liquidBeerFour {
+#liquid {
     background-color: #edaf32;
     border: 10px solid #edaf32;
     border-radius: 1em 1em 1em 1em;
-    position: relative;
-    top: 22em;
+    position: absolute;
+    top: 35em;
     height: 0em;
     overflow: hidden;
     width: 11.5em;
     z-index: -5;
 }
 
- #liquidBeerOne .bubble,
- #liquidBeerTwo .bubble,
- #liquidBeerThree .bubble,
- #liquidBeerFour .bubble {
+#liquid2 {
+    background-color: tomato;
+    border: 10px solid #edaf32;
+    border-radius: 1em 1em 1em 1em;
+    position: absolute;
+    top: 35em;
+    height: 0em;
+    overflow: hidden;
+    width: 11.5em;
+    z-index: -5;
+}
+
+#liquid3 {
+    background-color: #000;
+    border: 10px solid #edaf32;
+    border-radius: 1em 1em 1em 1em;
+    position: absolute;
+    top: 35em;
+    height: 0em;
+    overflow: hidden;
+    width: 11.5em;
+    z-index: -5;
+}
+
+#liquid4 {
+    background-color: #777;
+    border: 10px solid #edaf32;
+    border-radius: 1em 1em 1em 1em;
+    position: absolute;
+    top: 35em;
+    height: 0em;
+    overflow: hidden;
+    width: 11.5em;
+    z-index: -5;
+}
+
+
+
+
+ #liquid .bubble,
+ #liquid2 .bubble,
+ #liquid3 .bubble,
+ #liquid4 .bubble{
     position: relative;
     -webkit-animation-name: bubble;
     -webkit-animation-iteration-count: infinite;
@@ -171,10 +207,9 @@ li a img {
     border-radius: 30px;
     background-color: #fefefe;
 }
-
 .foam-1 {
     top: -30px;
-    left: -10px;
+    left: -15px;
 }
 
 .foam-2 {
@@ -198,7 +233,7 @@ li a img {
 }
 
 .foam-6 {
-    top: -20px;
+    top: -22px;
     left: 140px;
 }
 

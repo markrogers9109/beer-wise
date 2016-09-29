@@ -16,18 +16,23 @@ nav {
 }*/
 
 li a img {
-    width: 150px;
+    width: 175px;
+    height: 225px;
     margin: auto;
     display: flex;
     justify-content: center;
     padding: 45px 15px;
+}
+
+.right {
+  padding-right: 65px;
 }
 .other {
   padding: 15px 30px 45px 0px;
 }
 
 .ABA {
-  padding: 45px 5px 45px 30px;
+  padding: 45px 30px 45px 25px;
 }
 
 .BB {
@@ -39,7 +44,7 @@ li a img {
 }
 
 .beer--logos {
-    transition: transform 2s;
+  transition: transform 2s;
 }
 
 #Nav {

@@ -22,6 +22,21 @@ li a img {
     justify-content: center;
     padding: 45px 15px;
 }
+.other {
+  padding: 15px 30px 45px 0px;
+}
+
+.ABA {
+  padding: 45px 5px 45px 30px;
+}
+
+.BB {
+  padding: 45px 0px 45px 50px;
+}
+
+.duff {
+  padding: 45px 15px 45px 2px;
+}
 
 .beer--logos {
     transition: transform 2s;
@@ -33,6 +48,7 @@ li a img {
 
 #Nav>ul>li {
     list-style: none;
+    height: 50%;
 }
 
 .cup {

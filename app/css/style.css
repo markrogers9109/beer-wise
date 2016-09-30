@@ -27,6 +27,7 @@ li a img {
 .right {
   padding-right: 65px;
 }
+
 .other {
   padding: 15px 30px 45px 0px;
 }
@@ -111,8 +112,8 @@ li a img {
 }
 
 #liquid2 {
-    background-color: tomato;
-    border: 10px solid #edaf32;
+    background-color: #F89F00;
+    border: 10px solid #F89F00;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
     top: 35em;
@@ -261,4 +262,25 @@ li a img {
 .foam-7 {
     top: -30px;
     left: 160px;
+}
+
+.product--description {
+  position: absolute !important;
+  top: 10%;
+  left: 40%;
+  background-color: rgba(0, 0, 255, .25);
+  border: 2px solid rgba(255, 255, 255, .75);
+  border-radius: 5px;
+}
+
+.flex--container {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.beer--header {
+  text-align: center;
 }

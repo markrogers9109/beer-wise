@@ -8,7 +8,7 @@ angular.module('beerWise')
             // HOME STATES AND NESTED VIEWS ========================================
             .state('home', {
               url:('/home'),
-              templateUrl: 'index.html'
+              templateUrl: 'views/home.html'
             })
             .state('beer-one', {
                 url: '/beer-one',

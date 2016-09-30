@@ -13,17 +13,19 @@ angular.module('beerWise')
       jQuery('#liquid2') // I Said Fill 'Er Up!
         .delay(2000)
           .animate({
-              backgroundColor: 'red',
-              border: '10px solid #edaf32',
+              backgroundColor: '#F89F00',
+              border: '10px solid #F89F00',
               top: '14em',
               bottom: '22em',
               height: '22em'
           }, 3600);
 
       jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
-          .delay(4000)
+          .delay(3500)
           .animate({
-              bottom: '34em',
+              bottom: '41em',
               opacity: '1'
           }, 2300);  //Pour Me Another Drink, Bartender!
+
+      jQuery('body').css('backgroundColor', 'rgba(255, 255, 255, .5)');
 });

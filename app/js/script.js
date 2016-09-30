@@ -1,16 +1,18 @@
-var $ = jQuery,
-    wheelPosition = 0,
-    wheelRotation = 0,
-    imagePosition = 0;
+var $ = jQuery;
+
 
 $(document).ready(function() {
+    var wheelPosition = 0,
+        wheelRotation = 0,
+        imagePosition = 0;
 
     $('#Top').click(function() {
         if (wheelPosition === 0) {
             logoRotation(90);
         } else if (wheelPosition == 180) {
             logoRotation(-90);
-        } 
+        }
+        else return;
     });
 
     $('#Right').click(function() {

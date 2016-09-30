@@ -10,7 +10,7 @@ $(document).ready(function() {
             logoRotation(90);
         } else if (wheelPosition == 180) {
             logoRotation(-90);
-        } 
+        }
     });
 
     $('#Right').click(function() {

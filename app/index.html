@@ -17,26 +17,28 @@
     </head>
     <body>
       <div class="row">
-        <nav class="col-xs-8 col-xs-pull-4" id="Nav">
-            <ul>
-                <li class="col-xs-6 col-xs-offset-3">
-                    <a ui-sref="beer-one" id="Top"><img class="beer--logos ABA" src="images/ABA_Logo.png" alt="#"></a>
-                </li>
-                <li class="col-xs-6">
-                    <a ui-sref="beer-two" id="Left"><img class="beer--logos BB" src="images/beer_bb.png" alt="#"></a>
-                </li>
-                <li class="col-xs-6">
-                    <a ui-sref="beer-four" id="Right"><img class="beer--logos other" src="images/casual_logo.png" alt="#"></a>
-                </li>
-                <li class="col-xs-6 col-xs-offset-3">
-                    <a ui-sref="beer-three" id="Bottom"><img class="beer--logos duff" src="images/duff.png" alt="#"></a>
-                </li>
-            </ul>
-        </nav>
+        <div class="col-xs-12 col-xs-pull-2">
+            <nav class="col-xs-6" id="Nav">
+                <ul>
+                    <li class="col-xs-6">
+                        <a ui-sref="beer-one" id="Top"><img class="beer--logos ABA" src="images/beerwise-logo.png" alt="#"></a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a ui-sref="beer-two" id="Left"><img class="beer--logos BB" src="images/beer_bb.png" alt="#"></a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a ui-sref="beer-four" id="Right"><img class="beer--logos other" src="images/casual_logo.png" alt="#"></a>
+                    </li>
+                    <li class="col-xs-6">
+                        <a ui-sref="beer-three" id="Bottom"><img class="beer--logos duff" src="images/ABA_Logo.png" alt="#"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <ui-view></ui-view>
       </div>
-        <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>

@@ -16,15 +16,14 @@ nav {
 }*/
 
 li a img {
-    width: 175px;
-    height: 225px;
-    margin: auto;
+    width: 50%;
+    height: 50%;
+    margin: 25%;
     display: flex;
     justify-content: center;
-    padding: 45px 15px;
 }
 
-.right {
+/*.right {
   padding-right: 65px;
 }
 .other {
@@ -41,7 +40,7 @@ li a img {
 
 .duff {
   padding: 45px 15px 45px 2px;
-}
+}*/
 
 .beer--logos {
   transition: transform 2s;
@@ -49,22 +48,35 @@ li a img {
 
 #Nav {
     transition: transform 2s;
+    height: 700px;
+    width: 700px;
+    padding: 0;
+}
+
+#Nav>ul {
+    margin-top: 0;
+margin-bottom: 0px;
+padding-left: 0px;
+height: 100%;
+width: 100%;
 }
 
 #Nav>ul>li {
     list-style: none;
-    height: 50%;
+height: 350px;
+width: 350px;
+padding: 0px;
 }
 
 .cup {
-    margin-top: 13em;
-    margin-left: 10em;
-    width: 11.5em;
-    height: 21.1em;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    z-index: 100;
-    /*overflow: hidden;*/
+    margin-top: 8em;
+margin-left: 10em;
+width: 15em;
+height: 30em;
+border-bottom-left-radius: 1em;
+border-bottom-right-radius: 1em;
+z-index: 100;
+/* overflow: hidden; */
 }
 
 .cup:before {
@@ -75,12 +87,12 @@ li a img {
 }
 
 .cup:before {
-    height: 9em;
-    width: 2em;
-    margin: 6.5em 13em;
-    border-top-right-radius: 5em;
-    border-bottom-right-radius: 5em;
-    z-index: 100;
+    height: 13em;
+width: 3em;
+margin: 9em 16em;
+border-top-right-radius: 5em;
+border-bottom-right-radius: 5em;
+z-index: 100;
 }
 
 .cup .filled {
@@ -103,46 +115,46 @@ li a img {
     border: 10px solid #edaf32;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
-    top: 35em;
+    top: 38em;
     height: 0em;
     overflow: hidden;
-    width: 11.5em;
+    width: 15em;
     z-index: -5;
 }
 
 #liquid2 {
     background-color: tomato;
-    border: 10px solid #edaf32;
+    border: 10px solid tomato;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
-    top: 35em;
+    top: 38em;
     height: 0em;
     overflow: hidden;
-    width: 11.5em;
+    width: 15em;
     z-index: -5;
 }
 
 #liquid3 {
     background-color: #000;
-    border: 10px solid #edaf32;
+    border: 10px solid #000;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
-    top: 35em;
+    top: 38em;
     height: 0em;
     overflow: hidden;
-    width: 11.5em;
+    width: 15em;
     z-index: -5;
 }
 
 #liquid4 {
     background-color: #777;
-    border: 10px solid #edaf32;
+    border: 10px solid #777;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
-    top: 35em;
+    top: 38em;
     height: 0em;
     overflow: hidden;
-    width: 11.5em;
+    width: 15em;
     z-index: -5;
 }
 
@@ -214,7 +226,7 @@ li a img {
 .beer-foam {
     position: absolute;
     opacity: 0;
-    bottom: 30.8em;
+    bottom: 36em;
     z-index: 1;
 }
 
@@ -222,8 +234,8 @@ li a img {
     float: left;
     position: absolute;
     z-index: 1;
-    width: 50px;
-    height: 40px;
+    width: 60px;
+    height: 50px;
     border-top: 10px solid rgba(236, 240, 241, .4);
     border-radius: 30px;
     background-color: #fefefe;

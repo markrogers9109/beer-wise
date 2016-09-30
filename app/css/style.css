@@ -21,6 +21,7 @@ li a img {
     margin: 25%;
     display: flex;
     justify-content: center;
+    transform: rotate(-45deg);
 }
 
 /*.right {
@@ -52,6 +53,7 @@ li a img {
     height: 700px;
     width: 700px;
     padding: 0;
+    transform: rotate(45deg);
 }
 
 #Nav>ul {

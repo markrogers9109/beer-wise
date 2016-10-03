@@ -6,6 +6,7 @@ angular.module('beerWise')
         $stateProvider
 
             // HOME STATES AND NESTED VIEWS ========================================
+
             .state('beer-wise', {
                 url: '/beer-wise',
                 templateUrl: 'views/beer-wise.html',

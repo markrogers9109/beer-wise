@@ -21,9 +21,11 @@ angular.module('beerWise')
           }, 3600);
 
       jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
-          .delay(4000)
+          .delay(3500)
           .animate({
               bottom: '39em',
               opacity: '1'
           }, 2300);  //Pour Me Another Drink, Bartender!
+
+      jQuery('body').css('backgroundColor', 'rgba(255, 255, 255, .5)');
 });

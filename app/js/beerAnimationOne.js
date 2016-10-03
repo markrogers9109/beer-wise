@@ -26,4 +26,6 @@ angular.module('beerWise')
               bottom: '39em',
               opacity: '1'
           }, 2300);  //Pour Me Another Drink, Bartender!
+
+      jQuery('body').css('backgroundColor', 'tomato');
 });

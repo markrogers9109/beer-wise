@@ -1,14 +1,15 @@
 angular.module('beerWise')
     .config(function($stateProvider, $urlRouterProvider) {
 
-        $urlRouterProvider.otherwise('/home');
+        $urlRouterProvider.otherwise('/beer-wise');
 
         $stateProvider
 
             // HOME STATES AND NESTED VIEWS ========================================
-            .state('home', {
-              url:('/home'),
-              templateUrl: 'index.html'
+            .state('beer-wise', {
+                url: '/beer-wise',
+                templateUrl: 'views/beer-wise.html',
+                controller: 'beerAnimationOne'
             })
             .state('beer-one', {
                 url: '/beer-one',
@@ -25,9 +26,9 @@ angular.module('beerWise')
                 templateUrl: 'views/beer-three.html',
                 controller: 'beerAnimationThree'
             })
-            .state('beer-four', {
-                url: '/beer-four',
-                templateUrl: 'views/beer-four.html',
-                controller: 'beerAnimationFour'
-            })
+            // .state('beer-four', {
+            //     url: '/beer-four',
+            //     templateUrl: 'views/beer-four.html',
+            //     controller: 'beerAnimationFour'
+            // })
           })

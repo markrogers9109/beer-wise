@@ -16,6 +16,14 @@ body {
     right: 28%;
 }
 
+ul {
+    padding: 0px;
+}
+
+li {
+    list-style: none;
+}
+
 .bw-welcome {
     height: 800px;
     width: 63%;
@@ -30,7 +38,7 @@ body {
 .bw-beerOne {
     height: 800px;
     width: 63%;
-    background: url('../images/casual_logo.png') no-repeat;
+    background: url('../images/main-bb.jpg') no-repeat;
     background-size: contain;
     position: fixed;
     left: 37%;
@@ -41,8 +49,9 @@ body {
 .bw-beerTwo {
     height: 800px;
     width: 63%;
-    background: url('../images/main_celebrator.jpg') no-repeat;
-    background-size: contain;
+    background: url('../images/main_celebrator2.jpg') no-repeat;
+    background-size: cover;
+    background-position: center bottom;
     position: fixed;
     left: 37%;
     background-color: rgba(255, 255, 255, 1.0);
@@ -53,7 +62,7 @@ body {
     height: 800px;
     width: 63%;
     background: url('../images/main-t7.jpg') no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: fixed;
     left: 37%;
     background-color: rgba(255, 255, 255, 1.0);
@@ -63,33 +72,38 @@ body {
 .bw-welcome-bg {
     position: fixed;
     width: 100%;
-    height: 200px;
+    height: 275px;
     background-color:#7A1501;
     bottom: 0;
+    color: white;
+    padding: 30px;
 }
 
 .bw-beerOne-bg {
     position: fixed;
     width: 100%;
-    height: 200px;
-    background-color:#7A1501;
+    height: 275px;
+    background-color:#DA1D17;
     bottom: 0;
+    color: white;
 }
 
 .bw-beerTwo-bg {
     position: fixed;
     width: 100%;
-    height: 200px;
+    height: 275px;
     background-color:#1b90c6;
     bottom: 0;
+    color: white;
 }
 
 .bw-beerThree-bg {
     position: fixed;
     width: 100%;
-    height: 200px;
+    height: 275px;
     background-color:#f16e22;
     bottom: 0;
+    color: white;
 }
 
 .bw-welcome-bg h1,
@@ -100,8 +114,31 @@ body {
     font-family: 'Arvo', serif;*/
     font-family: 'Sanchez', serif;
     /*font-family: 'Copse', serif;*/
-    font-size: 60px;
+    font-size: 52px;
     color: white;
+    padding-left: 20px;
+}
+
+.bw-beerOne-bg h1 {
+    /*font-family: 'Cutive', serif;
+    font-family: 'Arvo', serif;*/
+    font-family: 'Sanchez', serif;
+    /*font-family: 'Copse', serif;*/
+    font-size: 44px;
+    color: white;
+    padding-left: 20px;
+}
+
+.bw-welcome-bg h3 {
+    padding-left: 30px;
+}
+
+.info-font-size {
+    font-size: 20px;
+}
+
+.info-font-size p {
+    font-size: 18px;
 }
 
 nav {
@@ -189,8 +226,8 @@ z-index: 100;
 }
 
 #liquid {
-    background-color: #edaf32;
-    border: 10px solid #edaf32;
+    background-color: #FBE803;
+    border: 10px solid #FBE803;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
     top: 38em;
@@ -201,8 +238,8 @@ z-index: 100;
 }
 
 #liquid2 {
-    background-color: #F89F00;
-    border: 10px solid #F89F00;
+    background-color: #573522;
+    border: 10px solid #573522;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
     top: 38em;
@@ -213,8 +250,8 @@ z-index: 100;
 }
 
 #liquid3 {
-    background-color: #000;
-    border: 10px solid #000;
+    background-color: #C66901;
+    border: 10px solid #C66901;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
     top: 38em;
@@ -225,8 +262,8 @@ z-index: 100;
 }
 
 #liquid4 {
-    background-color: #777;
-    border: 10px solid #777;
+    background-color: #C66901;
+    border: 10px solid #C66901;
     border-radius: 1em 1em 1em 1em;
     position: absolute;
     top: 38em;
@@ -308,7 +345,13 @@ z-index: 100;
     z-index: 1;
 }
 
-.foam-1, .foam-2, .foam-3, .foam-4, .foam-5, .foam-6, .foam-7 {
+.beer-foam_one .foam-1,
+.beer-foam_one .foam-2,
+.beer-foam_one .foam-3,
+.beer-foam_one .foam-4,
+.beer-foam_one .foam-5,
+.beer-foam_one .foam-6,
+.beer-foam_one .foam-7 {
     float: left;
     position: absolute;
     z-index: 1;
@@ -316,7 +359,43 @@ z-index: 100;
     height: 50px;
     border-top: 10px solid rgba(236, 240, 241, .4);
     border-radius: 30px;
-    background-color: #ffd747;
+    background-color: #FAFBF2;
+     /*#fefefe;*/
+}
+
+.beer-foam_two .foam-1,
+.beer-foam_two .foam-2,
+.beer-foam_two .foam-3,
+.beer-foam_two .foam-4,
+.beer-foam_two .foam-5,
+.beer-foam_two .foam-6,
+.beer-foam_two .foam-7 {
+    float: left;
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 50px;
+    border-top: 10px solid rgba(236, 240, 241, .4);
+    border-radius: 30px;
+    background-color: #AC9873;
+     /*#fefefe;*/
+}
+
+.beer-foam_three .foam-1,
+.beer-foam_three .foam-2,
+.beer-foam_three .foam-3,
+.beer-foam_three .foam-4,
+.beer-foam_three .foam-5,
+.beer-foam_three .foam-6,
+.beer-foam_three .foam-7 {
+    float: left;
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 50px;
+    border-top: 10px solid rgba(236, 240, 241, .4);
+    border-radius: 30px;
+    background-color: #FAFBF2;
      /*#fefefe;*/
 }
 .foam-1 {

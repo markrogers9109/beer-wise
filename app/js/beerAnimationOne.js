@@ -22,7 +22,6 @@ angular.module('beerWise')
 
 
           if($(window).innerHeight() > 700){
-            debugger;
             jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
               .delay(3750)
                 .animate({
@@ -31,7 +30,6 @@ angular.module('beerWise')
             }, 1900);  //Pour Me Another Drink, Bartender!
           }
           else {
-            debugger;
             jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
               .delay(4350)
                 .animate({

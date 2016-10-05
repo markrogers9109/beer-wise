@@ -1,22 +1,22 @@
 {
-  "name": "beer-wise",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/markrogers9109/beer-wise.git"
-  },
-  "author": "Mark Rogers",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/markrogers9109/beer-wise/issues"
-  },
-  "homepage": "https://github.com/markrogers9109/beer-wise#readme",
-  "dependencies": {
-    "angular-animate": "^1.5.8"
-  }
+    "name": "beer-wise",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/markrogers9109/beer-wise.git"
+    },
+    "author": "Mark Rogers",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/markrogers9109/beer-wise/issues"
+    },
+    "homepage": "https://github.com/markrogers9109/beer-wise#readme",
+    "dependencies": {
+        "angular-animate": "^1.5.8"
+    }
 }

@@ -10,7 +10,11 @@ angular.module('beerWise')
             .state('beer-wise', {
                 url: '/beer-wise',
                 templateUrl: 'views/beer-wise.html',
-                controller: 'beerAnimationOne'
+            })
+            .state('beer-wise-start', {
+              url: '/beer-wise-start',
+              templateUrl: 'views/beer-wise.html',
+              controller: 'beerAnimationOne'
             })
             .state('beer-one', {
                 url: '/beer-one',

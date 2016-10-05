@@ -20,10 +20,21 @@ angular.module('beerWise')
               height: '30em'
           }, 3600);
 
-      jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
-          .delay(4000)
-          .animate({
-              bottom: '39em',
-              opacity: '1'
-          }, 2300);  //Pour Me Another Drink, Bartender!
+          if($(window).innerHeight() > 700){
+            jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
+              .delay(3750)
+                .animate({
+                bottom: '46em',
+                opacity: '1'
+            }, 1900);  //Pour Me Another Drink, Bartender!
+          }
+          else {
+            jQuery('.beer-foam') // Keep that Foam Rollin' Toward the Top! Yahooo!
+              .delay(4350)
+                .animate({
+                bottom: '39em',
+                opacity: '1'
+            }, 1500);  //Pour Me Another Drink, Bartender!
+          }
+
 });

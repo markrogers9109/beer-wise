@@ -78,5 +78,12 @@ $(document).ready(function() {
         }
     }
 
-
+    $(window).resize(function(){
+      if($(window).innerHeight() > 700){
+        $('.beer-foam').css('bottom', '46em');
+      }
+      else {
+        $('.beer-foam').css('bottom', '39em');
+      }
+    });
 });

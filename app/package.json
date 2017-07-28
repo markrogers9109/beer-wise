@@ -17,6 +17,7 @@
     },
     "homepage": "https://github.com/markrogers9109/beer-wise#readme",
     "dependencies": {
-        "angular-animate": "^1.5.8"
+        "angular-animate": "^1.5.8",
+        "jquery": "^3.2.1"
     }
 }
